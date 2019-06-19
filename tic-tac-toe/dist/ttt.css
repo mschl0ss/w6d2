@@ -1,0 +1,76 @@
+* {
+  /* border: solid 1px red !important; */
+}
+.test-border {
+  border: solid 1px black;
+  
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  margin: 30px 0;
+  
+}
+figure {
+  
+}
+/* this is the main board UL */
+#board {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  
+  list-style-type: none;
+  width: 600px;
+  margin: 0 auto;
+}
+
+li {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background: slategray;
+  border: solid 5px white;
+  padding: 10px;
+  padding-top: 22px;
+  border-radius: 10px;
+  font-size: 125px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#board li:hover {
+  /* background: orange; */
+  border-color: orange;
+}
+
+#board .x:after {
+  content: 'x';
+}
+
+#board .o:after {
+  content: 'o';
+}
+
+#board .x, #board .o {
+  background: white;
+}
+
+#loser-square {
+  background-image: url('../img/cat.jpg');
+  background-size: contain;
+  background-position-x: center;
+}
+
+#loser-square:hover {
+  background-image: url('../img/giphy.gif');
+}
+
+.bender {
+  background-image: url('../img/giphy.gif');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  
+}
